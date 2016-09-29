@@ -1,0 +1,50 @@
+####
+Collection of react notes
+####
+
+-----------------------------------------------
+
+Imperative vs Declarative
+
+Imperative - tells it how to do it
+Declarative - what you want it to do
+
+For instance, and imperative version of a sum of number might look like:
+
+var numbers = [4,2,3,6]
+var total = 0
+for (var i = 0; i < numbers.length; i++){
+    total += numbers[i]
+}
+
+But a declarative version may look like:
+
+var numbers = [4,2,3,6]
+numbers.reduce(function(previous, current){
+    return previous + current
+})
+
+Benefits of declarative code:
+- reduce side effects
+- minimise mutability
+- more readable code (once you're used to it)
+- less bugs
+
+-----------------------------------------------
+
+Why we want to know this?
+For the most part, React is declarative.
+In terms of components it can be, but they still need handlers etc
+
+Components and composition
+- React components, similar to functions
+
+Explicit Mutations
+- you need to explicitly call things like setState
+
+Basic react is simple, but how modern tools fit together not so simple
+- React
+- React Router: map components to certain urls, similar to other routers
+- Webpack: used to bundle/transform code
+- Babel: can be used to convert jsx to js
+- Axios: used to make http requests
