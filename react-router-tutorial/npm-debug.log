@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/Josh/.nvm/versions/node/v6.5.0/bin/node',
+1 verbose cli   '/Users/Josh/.nvm/versions/node/v6.5.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'start:prod' ]
+2 info using npm@3.10.3
+3 info using node@v6.5.0
+4 verbose run-script [ 'prestart:prod', 'start:prod', 'poststart:prod' ]
+5 info lifecycle tutorial@1.0.0~prestart:prod: tutorial@1.0.0
+6 silly lifecycle tutorial@1.0.0~prestart:prod: no script for prestart:prod, continuing
+7 info lifecycle tutorial@1.0.0~start:prod: tutorial@1.0.0
+8 verbose lifecycle tutorial@1.0.0~start:prod: unsafe-perm in lifecycle true
+9 verbose lifecycle tutorial@1.0.0~start:prod: PATH: /Users/Josh/.nvm/versions/node/v6.5.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/Josh/AtomProjects/learning-react/react-router-tutorial/node_modules/.bin:/Users/Josh/.nvm/versions/node/v6.5.0/bin:/Users/Josh/.nvm/versions/node/v6.5.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/Josh/AtomProjects/learning-react/react-router-tutorial/node_modules/.bin:/Users/Josh/.nvm/versions/node/v6.5.0/bin:/Users/Josh/.nvm/versions/node/v6.5.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Library/TeX/texbin
+10 verbose lifecycle tutorial@1.0.0~start:prod: CWD: /Users/Josh/AtomProjects/learning-react/react-router-tutorial
+11 silly lifecycle tutorial@1.0.0~start:prod: Args: [ '-c', 'webpack && node server.js' ]
+12 silly lifecycle tutorial@1.0.0~start:prod: Returned: code: 1  signal: null
+13 info lifecycle tutorial@1.0.0~start:prod: Failed to exec start:prod script
+14 verbose stack Error: tutorial@1.0.0 start:prod: `webpack && node server.js`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/Users/Josh/.nvm/versions/node/v6.5.0/lib/node_modules/npm/lib/utils/lifecycle.js:242:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/Users/Josh/.nvm/versions/node/v6.5.0/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid tutorial@1.0.0
+16 verbose cwd /Users/Josh/AtomProjects/learning-react/react-router-tutorial
+17 error Darwin 15.4.0
+18 error argv "/Users/Josh/.nvm/versions/node/v6.5.0/bin/node" "/Users/Josh/.nvm/versions/node/v6.5.0/bin/npm" "run" "start:prod"
+19 error node v6.5.0
+20 error npm  v3.10.3
+21 error code ELIFECYCLE
+22 error tutorial@1.0.0 start:prod: `webpack && node server.js`
+22 error Exit status 1
+23 error Failed at the tutorial@1.0.0 start:prod script 'webpack && node server.js'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the tutorial package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     webpack && node server.js
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs tutorial
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls tutorial
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
