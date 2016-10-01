@@ -1,0 +1,27 @@
+###
+Lecture 2
+###
+
+Creating a basic React App
+------
+--save adds it as a dependency in package.json
+npm install --save
+    react //react core
+    react-dom //glue between react, split off from react for things like react-native
+
+npm install --save-dev
+--save-dev seperates dependencies from developer dependencies
+    html-webpack-plugin
+    webpack
+    webpack-dev-server
+    babel-core
+    babel-loader
+    babel-preset-react
+
+
+mkdir app
+cd app
+touch index.html
+touch index.js
+cd ../
+touch webpack.config.js

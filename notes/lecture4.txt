@@ -1,0 +1,10 @@
+###
+Lecture 4
+###
+
+Can create our own component links using {this.props.children}
+and onClick type functions
+
+Remember with JSX have to be careful of JS reserved words.
+For instance have to use <div className=""> instead of usual <div class="">
+because class is a reserved word in JS.

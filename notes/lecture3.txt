@@ -1,0 +1,31 @@
+###
+Lecture 3
+###
+
+Pure functions:
+Evaluates the same result given the same arguments
+Doesn't depend on and doesn't modify the states of variables out
+of its scope. For instance difference between slice and splice.
+
+Slice will create shallow copy and modifying copy
+Splice is not pure as it modifies the arguments
+
+Can pass props to components via:
+<Component prop1="blah" prop2="bleh" ... />
+And you can access these props via {this.props.prop1} etc within your views
+
+A good way to think about all this is:
+f(d) = v
+Your components are functions that take in data and return a view
+
+Everything returned from a render must be wrapped in one root element.
+If you've got many components put together then you should put a div around
+them.
+
+Compare all components against FIRST acronym, your components should be:
+
+- Focused
+- Independent
+- Reusable
+- Small
+- Testable
