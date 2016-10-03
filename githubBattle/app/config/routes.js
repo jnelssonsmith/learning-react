@@ -1,16 +1,13 @@
 import React from 'react'
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
-
+import { Route, IndexRoute } from 'react-router'
 
 import Main from '../components/Main'
 import Home from '../components/Home'
+import PromptContainer from '../containers/PromptContainer'
 
-var routes = (
-    <Router history={browserHistory}>
-        <Route path='/' component={Main}>
-            <IndexRoute component={Home} />
-        </Route>
-    </Router>
-);
-
-export default routes
+module.exports = (
+  <Route path="/" component={Main}>
+      <IndexRoute component={Home} />
+      <Route path="playerOne" header="Player One" component={PromptContainer} />
+  </Route>
+)
