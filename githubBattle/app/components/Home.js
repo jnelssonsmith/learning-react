@@ -1,11 +1,14 @@
-var React = require('react');
+import React from 'react';
 
-var Home = React.createClass({
-    render: function () {
+/** This is pure presentation so should probably just be exported as anon.
+function **/
+
+class Home extends React.Component {
+    render() {
         return (
             <div>Hello from Home!</div>
-        )
+        );
     }
-});
+}
 
-module.exports = Home;
+export default Home
