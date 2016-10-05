@@ -1,0 +1,21 @@
+###
+Lecture 6
+###
+
+Life cycle of components
+
+getIntialState
+- in es6 this is just set in the constructor
+- first thing to be called to initialise
+
+componentWillMount
+- called before the render function 
+
+componentDidMount
+- called after the render function
+
+componentWillRecieveProps
+- run after, but not sure how that works after render 
+
+componentWillUnmount
+- last thing called before death
