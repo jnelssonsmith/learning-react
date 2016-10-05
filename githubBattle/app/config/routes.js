@@ -6,8 +6,6 @@ import Home from '../components/Home'
 import Prompt from '../components/Prompt'
 import PromptContainer from '../containers/PromptContainer'
 
-var prompt = <Prompt />
-
 module.exports = (
   <Route path="/" component={Main}>
       <IndexRoute component={Home} />
