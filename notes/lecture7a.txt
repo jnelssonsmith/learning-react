@@ -1,0 +1,72 @@
+###
+Lecture 7
+###
+
+The 'this' keyword 
+
+4 Different rules
+- Implicit Binding
+- Explicit Binding
+- New Binding
+- Window Binding
+
+? Where is this function invoked ? 
+- shows what the 'this' keyword will refer to
+
+Implicit Binding
+- 'Left of the dot' at call time
+ex:
+var me = {
+	name: 'Josh',
+	age: 21,
+	sayName: function(){
+		console.log(this.name);
+	}
+};
+me.sayName(); --> logs "Josh"
+
+
+-- EXPLICIT BINDING --
+- call, apply and bind
+This can be made a little more interesting though by doing something like this and 
+making use of CONTEXT
+
+var sayName = function(){
+	console.log('My name is ' + this.name);
+};
+
+var Josh = {
+	name: 'Josh',
+	age: 21
+};
+
+sayName.call(Josh); --> passes Josh as the calling context to sayName function
+also note every other arg after the first is going to be passed to the function
+sayName.call(Josh, arg1, arg2, arg3); --> Josh(arg1, arg2, arg3).sayName();
+
+this can be annoying though so instead can use apply, which passes an array of args
+args = [arg1, arg2, arg3];
+sayName.apply(Josh, args) --> Josh(arg1, arg2, arg3).sayName();
+
+.bind is a little more tricky is saves the called version of everything as a function that can then be called later
+
+var newFunction = sayName.bind(Josh, arg1, arg2, arg3);
+then we can just call newFunction(); if we ever want to replicate that version of it
+
+--NEW BINDING -- 
+not really sure about this one, think its basically as you expect, 
+when this is referenced for a new object its still the same object
+
+-- Window BINDING --
+If you call a function that references 'this' keyword, but nothing to the left of the dot
+Ex:
+
+var sayAge = function(){
+	console.log(this.age);
+};
+
+sayAge(); --> returns undefined, by default binds to window object
+for instance if you say:
+window.age = 21;
+sayAge(); --> would return 21
+ 
