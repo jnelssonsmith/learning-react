@@ -27,11 +27,21 @@ class ConfirmBattleContainer extends React.Component {
                         // say this.setstate correctly
     }
 
+    handleInitiateBattle() {
+        this.context.router.push({
+            pathname: '/results',
+            state: {
+                playerInfo: this.state.playersInfo
+            }
+        })
+    }
+
     render() {
         return (
             <ConfirmBattle
             isLoading={this.state.isLoading}
-            playersInfo={this.state.playersInfo} />
+            playersInfo={this.state.playersInfo}
+            onInitiateBattle={this.handleInitiateBattle} />
         );
     }
 }
