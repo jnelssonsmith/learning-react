@@ -5,20 +5,18 @@ import { Link } from 'react-router'
 /** This is pure presentation so should probably just be exported as anon.
 function **/
 
-class Home extends React.Component {
-    render() {
-        return (
-            <div className='jumbotron col-sm-12 text-center' style={transparentBg}>
-                <h1>Github Battle</h1>
-                <p className="lead">Some fancy motto</p>
-                <Link to="/playerOne">
-                    <button type="button" className="btn btn-lg btn-success">
-                    Get Started
-                    </button>
-                </Link>
-            </div>
-        )
-    }
+function Home(props) {
+    return (
+        <div className='jumbotron col-sm-12 text-center' style={transparentBg}>
+            <h1>Github Battle</h1>
+            <p className="lead">Some fancy motto</p>
+            <Link to="/playerOne">
+                <button type="button" className="btn btn-lg btn-success">
+                Get Started
+                </button>
+            </Link>
+        </div>
+    );
 }
 
 export default Home
