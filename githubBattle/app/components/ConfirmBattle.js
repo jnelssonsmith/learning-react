@@ -1,5 +1,9 @@
 import React, { PropTypes } from 'react'
 
+function puke(object) {
+    return <pre>{JSON.stringify(object, null, ' ')}</pre>
+}
+
 function ConfirmBattle(props) {
     if (props.isLoading) {
         return (
@@ -7,7 +11,7 @@ function ConfirmBattle(props) {
         );
     } else {
         return (
-            <p> CONFIRM BATTLE! </p>
+            <p> CONFIRM BATTLE!: {puke(props)} </p>
         );
     }
 }

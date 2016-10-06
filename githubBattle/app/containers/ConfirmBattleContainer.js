@@ -1,5 +1,8 @@
 import React from 'react';
+
 import ConfirmBattle from '../components/ConfirmBattle'
+import githubHelpers from '../utils/githubHelpers'
+
 
 class ConfirmBattleContainer extends React.Component {
 
@@ -8,20 +11,27 @@ class ConfirmBattleContainer extends React.Component {
 
         this.state = {
             isLoading: true,
-            playerInfo: []
+            playersInfo: []
         }
     }
 
     componentDidMount() {
         var query = this.props.location.query;
-        // Fetch info from github then update state
+        githubHelpers.getPlayersInfo([query.playerOne, query.playerTwo])
+            .then(function(players) {
+                this.setState({
+                    isLoading: false,
+                    playersInfo: [players[0], players[1]]
+                })
+            }.bind(this)); //have to bind promise to this so that we can
+                        // say this.setstate correctly
     }
 
     render() {
         return (
             <ConfirmBattle
             isLoading={this.state.isLoading}
-            playerInfo={this.state.playerInfo} />
+            playersInfo={this.state.playersInfo} />
         );
     }
 }

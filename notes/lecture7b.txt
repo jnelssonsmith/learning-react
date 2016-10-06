@@ -1,4 +1,5 @@
 ###
-Lecture 7 - second part
+Lecture 7 second part
 ###
 
+Useful notes on lessons learnt about promises, axios and bind should go here
