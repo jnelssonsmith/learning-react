@@ -3,10 +3,7 @@ import styles from '../styles/styles'
 import { Link } from 'react-router'
 import UserDetails from '../components/UserDetails'
 import UserDetailsWrapper from '../components/UserDetailsWrapper'
-
-function puke(object) {
-    return <pre>{JSON.stringify(object, null, ' ')}</pre>
-}
+import MainWrapper from '../components/MainWrapper'
 
 function ConfirmBattle(props) {
     if (props.isLoading) {
@@ -15,7 +12,7 @@ function ConfirmBattle(props) {
         );
     } else {
         return (
-            <div className="jumbotron col-sm-12 text-center" style={styles.transparentBg}>
+            <MainWrapper>
                 <h1>Confirm Players</h1>
                 <div className="col-sm-8 col-sm-offset-2">
                     <UserDetailsWrapper header='Player One'>
@@ -39,7 +36,7 @@ function ConfirmBattle(props) {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </MainWrapper>
         );
     }
 }

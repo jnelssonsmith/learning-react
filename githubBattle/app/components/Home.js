@@ -1,13 +1,10 @@
-import React from 'react';
-import { transparentBg } from '../styles/styles'
+import React from 'react'
 import { Link } from 'react-router'
-
-/** This is pure presentation so should probably just be exported as anon.
-function **/
+import MainWrapper from '../components/MainWrapper'
 
 function Home(props) {
     return (
-        <div className='jumbotron col-sm-12 text-center' style={transparentBg}>
+        <MainWrapper>
             <h1>Github Battle</h1>
             <p className="lead">Some fancy motto</p>
             <Link to="/playerOne">
@@ -15,7 +12,7 @@ function Home(props) {
                 Get Started
                 </button>
             </Link>
-        </div>
+        </MainWrapper>
     );
 }
 
