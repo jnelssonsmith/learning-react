@@ -4,11 +4,12 @@ import { Link } from 'react-router'
 import UserDetails from '../components/UserDetails'
 import UserDetailsWrapper from '../components/UserDetailsWrapper'
 import MainWrapper from '../components/MainWrapper'
+import Loading from '../components/Loading'
 
 function ConfirmBattle(props) {
     if (props.isLoading) {
         return (
-            <p> LOADING! </p>
+            <Loading />
         );
     } else {
         return (
