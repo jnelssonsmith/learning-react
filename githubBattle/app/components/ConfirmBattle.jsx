@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react'
 import styles from '../styles/styles'
 import { Link } from 'react-router'
-import UserDetails from '../components/UserDetails'
-import UserDetailsWrapper from '../components/UserDetailsWrapper'
-import MainWrapper from '../components/MainWrapper'
-import Loading from '../components/Loading'
+import UserDetails from '../components/UserDetails.jsx'
+import UserDetailsWrapper from '../components/UserDetailsWrapper.jsx'
+import MainWrapper from '../components/MainWrapper.jsx'
+import Loading from '../components/Loading.jsx'
 
 function ConfirmBattle(props) {
     if (props.isLoading) {

@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react'
 import { Link } from 'react-router'
 import styles from '../styles/styles'
-import UserDetails from './UserDetails'
-import UserDetailsWrapper from './UserDetailsWrapper'
-import MainWrapper from './MainWrapper'
-import Loading from './Loading'
+import UserDetails from './UserDetails.jsx'
+import UserDetailsWrapper from './UserDetailsWrapper.jsx'
+import MainWrapper from './MainWrapper.jsx'
+import Loading from './Loading.jsx'
 
 function StartOver() {
     return (

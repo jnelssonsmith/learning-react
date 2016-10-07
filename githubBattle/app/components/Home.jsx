@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
-import MainWrapper from '../components/MainWrapper'
+import MainWrapper from '../components/MainWrapper.jsx'
 
 function Home(props) {
     return (

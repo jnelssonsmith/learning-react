@@ -1,5 +1,5 @@
 import React from 'react'
-import Results from '../components/Results'
+import Results from '../components/Results.jsx'
 import githubHelpers from '../utils/githubHelpers'
 
 class ResultsContainer extends React.Component {

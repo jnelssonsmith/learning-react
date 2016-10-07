@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ConfirmBattle from '../components/ConfirmBattle'
+import ConfirmBattle from '../components/ConfirmBattle.jsx'
 import githubHelpers from '../utils/githubHelpers'
 
 
