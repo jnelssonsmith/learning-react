@@ -1,0 +1,38 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "Joshua-Xavier's spin on boilerplate for a basic vanilla react app",
+  "main": "./app/index.jsx",
+  "dependencies": {
+    "axios": "^0.14.0",
+    "react": "^15.3.2",
+    "react-addons-css-transition-group": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "html-webpack-plugin": "^2.22.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "scripts": {
+    "production": "webpack -p",
+    "dev": "webpack-dev-server --inline --content-base app/ --history-api-fallback"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshua-xavier/react-boilerplate.git"
+  },
+  "author": "Josh Nelsson-Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshua-xavier/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/joshua-xavier/react-boilerplate#readme"
+}
