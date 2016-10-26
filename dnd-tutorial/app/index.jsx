@@ -1,9 +1,12 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, browserHistory } from 'react-router'
-
+import Board from './components/Board.jsx'
+import { observe } from './components/Game.jsx'
 import routes from './config/routes.jsx'
 
-render((
-    <Router routes={routes} history={browserHistory} />
-    ), document.getElementById('app'))
+const rootEl = document.getElementById('app');
+observe(knightPosition =>
+    render((
+        <Board knightPosition={knightPosition} />
+    ), rootEl)
+);

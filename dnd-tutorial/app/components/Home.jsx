@@ -3,7 +3,7 @@ import Board from './Board.jsx'
 
 function Home(props) {
     return (
-        <Board knightPosition={[0,0]} />
+        <Board knightPosition={[4,7]} />
     );
 }
 
