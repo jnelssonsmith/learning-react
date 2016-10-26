@@ -11,7 +11,7 @@ export default class Board extends Component {
     const [knightX, knightY] = this.props.knightPosition;
     const piece = (x === knightX && y === knightY) ?
       <Knight /> :
-      null;
+      <p>.</p>;
 
     return (
       <div key={i}
