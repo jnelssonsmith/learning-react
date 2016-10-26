@@ -1,14 +1,9 @@
 import React from 'react'
-import Knight from './Knight.jsx'
-import Square from './Square.jsx'
+import Board from './Board.jsx'
 
 function Home(props) {
     return (
-        <div>
-            <Square black>
-                <Knight />
-            </Square>
-        </div>
+        <Board knightPosition={[0,0]} />
     );
 }
 
